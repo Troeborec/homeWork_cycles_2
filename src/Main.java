@@ -61,12 +61,22 @@ public class Main {
         double totallWithPercent_3 = 0;
         double percent_3 = 0.07;
         for (int i = 1; i <= 108; i++) {
-            totall_3=totall_3 + salary_3;
+            totall_3 = totall_3 + salary_3;
             totallWithPercent_3 = (totallWithPercent_3 + totall_3) * (1 + percent_3);
-            if (i % 6 ==0){
+            if (i % 6 == 0) {
                 System.out.println("Месяц " + i + " Итого " + totallWithPercent_2);
             }
-
+        }
+        //task 7
+        System.out.println("Задача №7");
+        int month = 31;
+        int friday = 5;
+        for (int month = 31 % 5 != 0) {
+            System.out.print(" ");
+        }else if {
+            for (int i = 1; i <= 31; i++) {
+                System.out.println("Сегодня пятница " + i + " -е число. Необходимо подготовить отчет");
+            }
         }
     }
 }

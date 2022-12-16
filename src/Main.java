@@ -36,11 +36,37 @@ public class Main {
         int totall = 0;
         double totallWithPercent = 0;
         double percent = 0.07D;
-        for (int i = 0; totall < 12_000_000; i++) {
+        for (int i = 1; totall < 12_000_000; i++) {
             totall = totall + salaryy;
             totallWithPercent = (totallWithPercent + totall) * (1 + percent);
-                System.out.println("Месяц " + i + " Итого " + totallWithPercent);
-            }
+            System.out.println("Месяц " + i + " Итого " + totallWithPercent);
+        }
         //task 5
+        System.out.println("Задача №5");
+        int salary_2 = 15_000;
+        int totall_2 = 0;
+        double totallWithPercent_2 = 0;
+        double percent_2 = 0.07D;
+        for (int i = 1; totall_2 < 12_000_000; i++) {
+            totall_2 = totall_2 + salary_2;
+            totallWithPercent_2 = (totallWithPercent_2 + totall_2) * (1 + percent_2);
+            if (i % 6 == 0) {
+                System.out.println("Месяц " + i + " Итого " + totallWithPercent_2);
+            }
+        }
+        //task 6
+        System.out.println("Задача №6");
+        int salary_3 = 15_000;
+        int totall_3 = 0;
+        double totallWithPercent_3 = 0;
+        double percent_3 = 0.07;
+        for (int i = 1; i <= 108; i++) {
+            totall_3=totall_3 + salary_3;
+            totallWithPercent_3 = (totallWithPercent_3 + totall_3) * (1 + percent_3);
+            if (i % 6 ==0){
+                System.out.println("Месяц " + i + " Итого " + totallWithPercent_2);
+            }
+
         }
     }
+}

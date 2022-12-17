@@ -69,14 +69,5 @@ public class Main {
         }
         //task 7
         System.out.println("Задача №7");
-        int month = 31;
-        int friday = 5;
-        for (int month = 31 % 5 != 0) {
-            System.out.print(" ");
-        }else if {
-            for (int i = 1; i <= 31; i++) {
-                System.out.println("Сегодня пятница " + i + " -е число. Необходимо подготовить отчет");
-            }
         }
     }
-}

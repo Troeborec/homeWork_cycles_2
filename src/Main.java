@@ -2,11 +2,12 @@ public class Main {
     public static void main(String[] args) {
         //task 1
         System.out.println("Задача №1");
-        int salary = 15_000;
-        int total = 0;
-        while (total < 2_459_000) {
-            total = total + salary;
-            System.out.println(total);
+        int salary = 0;
+        int summa = 0;
+        while (summa < 2_459_000) {
+            summa += 15_000;
+            salary++;
+            System.out.println("Месяц " + salary + ", сумма накоплений равна " + summa + " рублей");
         }
         //task 2
         System.out.println("Задача №2");
@@ -23,12 +24,13 @@ public class Main {
         System.out.println();
         //task 3
         System.out.println("Задача №3");
-        int birth = 17;
         int totalNumber = 12_000_000;
-        int mortality = 8;
+        int birth = 17 * totalNumber / 1000;
+        int mortality = 8 * totalNumber / 1000;
         for (int i = 1; i <= 10; i++) {
-            birth = totalNumber + (totalNumber % 1000 * birth) - (totalNumber % 1000 * mortality);
-            System.out.println("Год " + i + " ,численность населения составляет " + birth);
+            totalNumber += birth;
+            totalNumber -= mortality;
+            System.out.println("Год " + i + " ,численность населения составляет " + totalNumber);
         }
         //task 4
         System.out.println("Задача №4");
@@ -69,5 +71,19 @@ public class Main {
         }
         //task 7
         System.out.println("Задача №7");
+        int firstFriday = 5;
+        for (int secondFriday = firstFriday; secondFriday <= 31; secondFriday += 7) {
+            System.out.println("Сегодня пятница," + secondFriday + " -е число. Необходимо подготовить отчет");
+        }
+        //task 8
+        System.out.println("Задача №8");
+        int firstYear = 2022;
+        int nextComet = firstYear - 200;
+        int nextComet_2_0 = firstYear + 100;
+        for (int i = nextComet; i < nextComet_2_0; i++) {
+            if (i % 79 ==0){
+                System.out.println(i);
+            }
+        }
         }
     }
